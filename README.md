@@ -38,8 +38,12 @@ Change file permissions on a hidden file
 Another change that must be made is for the hidden file .projects_x.txt which is an archived file. It should have read permissions to both the user and the group, but not write permissions to both. 
 To correct the permissions for this file, the command chmod u-w,g-w,g+r .project_x.txt was used. This command removes the write permissions for both user types and gives the group permission to read the hidden file.
 
+![3](https://github.com/RafUrera/LinuxFilePermissionsPortfolio/assets/161657613/a2fe2692-df06-42b3-a456-3ec75397852b)
+
 Change directory permissions
 The final change to be addressed is access to the directories. The drafts directory in particular should only be accessible to the user, researcher2. To correct the permissions the following command was used: chmod g-x drafts . This removes the execute permission from the group type users leaving only researcher2 as the only user with access to the directory.
+
+![4](https://github.com/RafUrera/LinuxFilePermissionsPortfolio/assets/161657613/5b8a24f0-9217-4e66-8d4c-2cda102d5f0a)
 
 Summary
 The changes made in this document are as follows: 
