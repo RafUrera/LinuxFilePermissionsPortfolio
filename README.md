@@ -4,7 +4,7 @@
 
 Upon examination of the file permissions on the research team’s system. It is found that certain group members have more permissions than they need to. According to the principle of least privilege these permissions will be assessed and given as required by the members. 
 
-## Check file and Directory Details
+## Check File and Directory Details
 The original permissions of the `projects` directory are as follows:
 
 ![1](https://github.com/RafUrera/LinuxFilePermissionsPortfolio/assets/161657613/76fe2238-5ec3-4b0d-bc7b-89bc76a7ba24)
