@@ -4,7 +4,7 @@
 
 Upon examination of the file permissions on the research team’s system. It is found that certain group members have more permissions than they need to. According to the principle of least privilege these permissions will be assessed and given as required by the members. 
 
-## Check file and directory details
+## Check file and Directory Details
 The original permissions of the `projects` directory are as follows:
 
 ![1](https://github.com/RafUrera/LinuxFilePermissionsPortfolio/assets/161657613/76fe2238-5ec3-4b0d-bc7b-89bc76a7ba24)
@@ -12,7 +12,7 @@ The original permissions of the `projects` directory are as follows:
 Using the command `ls -la` displays all the files in the `projects` directory including hidden files. Notably, there is a `drafts` directory, a hidden file named `.project_x.txt`, and four other project files. The first 10 characters of each line of text displays the permissions of each directory or file on display.
 Throughout the document the command `chmod` will be used. This command will allow changes to the permissions of a file or document to be changed. This is used to either give or deny a user type access to a file or directory. 
 
-## Describe the permissions string
+## Describe the Permissions String
 
 The permission string is a 10 character string that displays the permissions for each file indicating which users can access or manipulate the file. An explanation of the string are as follows:
 * The First Character - Represented by the letter `d` or a hyphen `-` , this can either indicate the file type of a directory (`d`) or a regular file (`-`). 
