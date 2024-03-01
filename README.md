@@ -29,8 +29,12 @@ Change file permissions
 According to company policy the user type ‘other’ should not have write access to any of the files. In reference to the original permissions, project_k.txt must have its write permission removed for the ‘other’ user type.
 This is done by using the command chmod o-w projects_k.txt which changes the permissions for the specified file. 
 
+![2](https://github.com/RafUrera/LinuxFilePermissionsPortfolio/assets/161657613/bd1c1247-d3d8-4cf3-b7e1-6ebbd16887ed)
+
 The command ls -la displays the permissions, which ensures that the permissions were changed correctly.
+
 Change file permissions on a hidden file
+
 Another change that must be made is for the hidden file .projects_x.txt which is an archived file. It should have read permissions to both the user and the group, but not write permissions to both. 
 To correct the permissions for this file, the command chmod u-w,g-w,g+r .project_x.txt was used. This command removes the write permissions for both user types and gives the group permission to read the hidden file.
 
