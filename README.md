@@ -26,7 +26,7 @@ The permission string is a 10 character string that displays the permissions for
 * 8th-10th Characters - The Other’s read, write, and execute permissions represented by `rwx` , a hyphen indicates the user type does not have that permission.
 
 
-## Change file permissions
+## Change File Permissions
 According to company policy the user type ‘other’ should not have write access to any of the files. In reference to the original permissions, `project_k.txt` must have its write permission removed for the ‘other’ user type.
 This is done by using the command `chmod o-w projects_k.txt` which changes the permissions for the specified file. 
 
@@ -34,7 +34,7 @@ This is done by using the command `chmod o-w projects_k.txt` which changes the p
 
 The command `ls -la` displays the permissions, which ensures that the permissions were changed correctly.
 
-## Change file permissions on a hidden file
+## Change File Permissions on a Hidden File
 
 Another change that must be made is for the hidden file `.projects_x.txt` which is an archived file. It should have read permissions to both the user and the group, but not write permissions to both. 
 To correct the permissions for this file, the command `chmod u-w,g-w,g+r .project_x.txt` was used. This command removes the write permissions for both user types and gives the group permission to read the hidden file.
