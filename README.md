@@ -1,8 +1,8 @@
 # LinuxFilePermissionsPortfolio
 
-File permissions in Linux
+# File permissions in Linux
 
-Project description
+## Project description
 
 Upon examination of the file permissions on the research team’s system. It is found that certain group members have more permissions than they need to. According to the principle of least privilege these permissions will be assessed and given as required by the members. 
 Check file and directory details
@@ -25,7 +25,7 @@ x means that the user type has execute permissions meaning they view the directo
 8th-10th Characters - The Other’s read, write, and execute permissions represented by rwx , a hyphen indicates the user type does not have that permission.
 
 
-Change file permissions
+## Change file permissions
 According to company policy the user type ‘other’ should not have write access to any of the files. In reference to the original permissions, project_k.txt must have its write permission removed for the ‘other’ user type.
 This is done by using the command chmod o-w projects_k.txt which changes the permissions for the specified file. 
 
@@ -33,22 +33,24 @@ This is done by using the command chmod o-w projects_k.txt which changes the per
 
 The command ls -la displays the permissions, which ensures that the permissions were changed correctly.
 
-Change file permissions on a hidden file
+## Change file permissions on a hidden file
 
 Another change that must be made is for the hidden file .projects_x.txt which is an archived file. It should have read permissions to both the user and the group, but not write permissions to both. 
 To correct the permissions for this file, the command chmod u-w,g-w,g+r .project_x.txt was used. This command removes the write permissions for both user types and gives the group permission to read the hidden file.
 
 ![3](https://github.com/RafUrera/LinuxFilePermissionsPortfolio/assets/161657613/a2fe2692-df06-42b3-a456-3ec75397852b)
 
-Change directory permissions
+## Change directory permissions
+
 The final change to be addressed is access to the directories. The drafts directory in particular should only be accessible to the user, researcher2. To correct the permissions the following command was used: chmod g-x drafts . This removes the execute permission from the group type users leaving only researcher2 as the only user with access to the directory.
 
 ![4](https://github.com/RafUrera/LinuxFilePermissionsPortfolio/assets/161657613/5b8a24f0-9217-4e66-8d4c-2cda102d5f0a)
 
-Summary
+## Summary
+
 The changes made in this document are as follows: 
-Permissions for the files in the projects directory remain editable only to reseacher2 and the research group. 
+Permissions for the files in the `projects` directory remain editable only to `reseacher2` and the research group. 
 Permissions for the hidden files are set to read only for appropriate users.
-Permissions for the drafts directory are only accessible to the primary user, researcher2.
-These permissions were all set using the chmod command and manually checked by using the ls -la command to display the permissions of files and directories.
+Permissions for `the drafts` directory are only accessible to the primary user, `researcher2`.
+These permissions were all set using the `chmod` command and manually checked by using the `ls -la` command to display the permissions of files and directories.
 
